@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.technoapp.wmf.dbtest.MainActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Add Sessions"
+        android:id="@+id/btnAddSessions"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Remove Sessions"
+        android:id="@+id/btnDeleteSessions"
+        android:layout_alignBottom="@+id/btnAddSessions"
+        android:layout_toEndOf="@+id/btnAddSessions" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test Add GPS"
+        android:id="@+id/btnAddGPS"
+        android:layout_below="@+id/btnAddSessions"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Move GPS"
+        android:id="@+id/btnMoveGPS"
+        android:layout_alignTop="@+id/btnAddGPS"
+        android:layout_toEndOf="@+id/btnAddSessions" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Database"
+        android:id="@+id/btnDeleteDB"
+        android:layout_below="@+id/btnAddGPS"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upgrade Database"
+        android:id="@+id/btnUpgradeDB"
+        android:layout_alignTop="@+id/btnDeleteDB"
+        android:layout_alignStart="@+id/btnMoveGPS" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/dbNumber"
+        android:layout_below="@+id/btnUpgradeDB"
+        android:layout_alignEnd="@+id/btnUpgradeDB"
+        android:layout_alignStart="@+id/btnUpgradeDB" />
+</RelativeLayout>
